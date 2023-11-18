@@ -42,7 +42,6 @@ static bool IRAM_ATTR timer_1ms_on_alarm(gptimer_handle_t timer, const gptimer_a
 
     ms++;
 
-    //if (reset_time_frame == false && light_barrier_active == true){
     if (light_barrier_active == true && reset_time_frame == false){
         light_barrier_active = false;
 
